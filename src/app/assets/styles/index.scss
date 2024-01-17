@@ -1,0 +1,89 @@
+@import "colors.scss";
+@import "fonts";
+
+@import "about";
+@import "circle-logo";
+@import "decoration-circle";
+@import "job-experience";
+@import "nav-bar";
+@import "presentation";
+@import "projects";
+@import "project-display";
+@import "technologies";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: $backgroundcolor;
+  background-repeat: no-repeat;
+  color: $fontcolor;
+  font-family: $normalfont;
+}
+
+a {
+  text-decoration: none;
+  color: $lightblue;
+}
+
+.presentation {
+  margin-bottom: 850px;
+}
+
+.shadow {
+  box-shadow: 0px 0px 16px rgba(29, 52, 97, 0.2);
+}
+
+.app-container {
+  hr {
+    margin: 0px auto;
+    width: 100%;
+    border-radius: 50px;
+    border-top: 1px solid $lightblue;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
+
+  @media screen and (max-width: 834px) {
+    hr .about-line {
+      margin-bottom: 150px;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-bottom: 4px solid #fff;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: transparent;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  min-height: 40px;
+}
+
+:hover::-webkit-scrollbar-thumb {
+  background: #cfd6df;
+}
+
+::-webkit-scrollbar-thumb {
+  border-bottom: 4px solid #fff;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: transparent;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  min-height: 40px;
+}

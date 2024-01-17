@@ -1,0 +1,185 @@
+@import "colors";
+
+// .navbar-container {
+//     height: 80px;
+//     display: flex;
+//     flex-direction: row;
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+//     box-shadow: #3c40434d 0px 1px 2px 0px, #3c404326 0px 1px 3px 1px;
+//     z-index: 50;
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100vw;
+  padding: 12px 0;
+  z-index: 50;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: $backgroundcolor-lighter-transparent;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 6px 12px;
+
+    a {
+        border-radius: 20px;
+        color: #fff;
+        padding: 4px 8px;
+        &:hover {
+            background-color: $buttoncolor;
+
+        }
+    }
+
+    .circle-nav {
+      cursor: pointer;
+    }
+    // }
+    .checkbtn {
+      font-size: 30px;
+      color: #fff;
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none;
+    }
+    #check {
+      display: none;
+    }
+  }
+}
+// @media screen and (min-width: 1px) and (max-width: 858px) {
+//   .circle {
+//     padding-top: 5px;
+//     padding-left: 10px;
+//   }
+
+//   .checkbtn {
+//     display: block;
+//   }
+//   ul {
+//     position: fixed;
+//     width: 100%;
+//     height: auto;
+//     background: #ffffff10;
+//     backdrop-filter: blur(12px);
+//     -webkit-backdrop-filter: blur(12px);
+//     top: 80px;
+//     left: -100%;
+//     text-align: center;
+//     transition: all 0.1s;
+//     display: flex;
+//     flex-direction: column;
+//     margin-top: 5px;
+//   }
+//   nav ul li {
+//     display: block;
+//     margin: 30px 0px;
+//   }
+
+//   #check:checked ~ ul {
+//     left: 0;
+//   }
+//   .navbar-container .nav {
+//     justify-content: space-between;
+//     padding-top: 10px;
+//   }
+//   .navbar-container {
+//     height: 85px;
+//   }
+// }
+
+// @media screen and (min-width: 859px) and (max-width: 952px) {
+//   .circle {
+//     padding-top: 15px;
+//   }
+//   .enlace {
+//     padding-left: 20px;
+//   }
+//   .nav ul li h3 {
+//     font-size: 16px;
+//   }
+//   .nav ul {
+//     display: flex;
+//     flex-direction: row;
+//     li {
+//       text-decoration: none;
+//       background-image: linear-gradient($lightblue, $lightblue);
+//       background-position: 0% 100%;
+//       background-repeat: no-repeat;
+//       background-size: 0% 2px;
+//       transition: background-size 0.3s;
+//     }
+//     li:hover,
+//     li:focus {
+//       background-size: 100% 2px;
+//     }
+//   }
+
+//   .navbar-container {
+//     height: 75px;
+//   }
+// }
+
+// @media screen and (min-width: 953px) and (max-width: 1600px) {
+//   .nav ul {
+//     display: flex;
+//     font-size: 18px;
+//     li {
+//       text-decoration: none;
+//       background-image: linear-gradient($lightblue, $lightblue);
+//       background-position: 0% 100%;
+//       background-repeat: no-repeat;
+//       background-size: 0% 2px;
+//       transition: background-size 0.3s;
+//     }
+//     li:hover,
+//     li:focus {
+//       background-size: 100% 2px;
+//     }
+//   }
+//   .circle {
+//     padding-top: 15px;
+//   }
+//   .navbar-container {
+//     height: 60px;
+//   }
+// }
+
+// @media screen and (min-width: 1601px) and (max-width: 3000px) {
+//   .navbar-container nav ul {
+//     display: flex;
+//     li {
+//       text-decoration: none;
+//       background-image: linear-gradient($lightblue, $lightblue);
+//       background-position: 0% 100%;
+//       background-repeat: no-repeat;
+//       background-size: 0% 2px;
+//       transition: background-size 0.3s;
+//     }
+//     li:hover,
+//     li:focus {
+//       background-size: 100% 2px;
+//     }
+//   }
+//   .nav ul li h3 {
+//     font-size: 24px;
+//   }
+//   .circle {
+//     padding-top: 20px;
+//   }
+// }

@@ -1,0 +1,121 @@
+@import "fonts";
+@import "colors";
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .about-title {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: $bigfont;
+  }
+  .about-content {
+    display: flex;
+    .about-text-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      article {
+        margin-inline: 24px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .github-linkedin-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        a {
+          padding: 5px;
+          transition: all ease 0.3s;
+          border-radius: 50%;
+          height: 70px;
+          width: 70px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: $backgroundcolor-lighter;
+        }
+        a:hover {
+          background: linear-gradient(180deg, $lightblue, $blue);
+        }
+        .linkedin-logo-bg {
+          background-color: #fff;
+          border-radius: 20%;
+        }
+      }
+    }
+
+    .about-image {
+      position: relative;
+      width: 100%;
+      height: auto;
+      .img-about {
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .about-container {
+    margin-top: 72px;
+    gap: 46px;
+    .about-content {
+      .about-text-contact {
+        article {
+          gap: 18px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .about-image {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1670px) {
+  .about-container {
+    height: 100vh;
+    gap: 46px;
+    .about-content {
+      width: 80vw;
+      .about-text-contact {
+        width: 60%;
+        article {
+          gap: 18px;
+          font-size: 20px;
+          letter-spacing: 0.28px;
+        }
+      }
+      .about-image {
+        width: 40%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1671px) {
+  .about-container {
+    height: 100vh;
+    gap: 46px;
+    .about-content {
+      width: 70vw;
+      .about-text-contact {
+        article {
+          gap: 18px;
+          font-size: 20px;
+          letter-spacing: 0.28px;
+        }
+      }
+    }
+  }
+}
