@@ -28,11 +28,23 @@ function ProjectDisplay({
         <div className="project-technologies">
           {projectTechnologies.map((technology) => (
             <div className="technology-square">
-              <Icon
-                name={technology.technologyIcon}
-                height="18px"
-                width="18px"
-              />
+              <div
+                className={
+                  technology.technologyIcon === "nextjs" &&
+                  "bg-white rounded-full h-[18px] w-[18px] flex items-center justify-center"
+                }
+              >
+                <Icon
+                  name={technology.technologyIcon}
+                  height="18px"
+                  width="18px"
+                  viewBox={
+                    technology.technologyIcon === "nextjs"
+                      ? ".5 -.2 1023 1024.1"
+                      : ""
+                  }
+                />
+              </div>
               <span>{technology.technology}</span>
             </div>
           ))}
@@ -40,20 +52,12 @@ function ProjectDisplay({
 
         <div className="project-btns">
           {repository?.length > 0 && (
-            <a
-              href={repository}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={repository} target="_blank" rel="noreferrer">
               <Icon name="github" height="36px" width="36px" fill="#fff" />
             </a>
           )}
           {website?.length > 0 && (
-            <a
-              href={website}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={website} target="_blank" rel="noreferrer">
               <Icon
                 name="web"
                 height="36px"

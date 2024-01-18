@@ -15,7 +15,7 @@ function Projects() {
         las funcionalidades de una tienda online típica."
         projectImage="/mysaccesorios.png"
         projectTechnologies={[
-          { technology: "Next.js", technologyIcon: "next.js" },
+          { technology: "Next.js", technologyIcon: "nextjs" },
           { technology: "TypeScript", technologyIcon: "typescript" },
           { technology: "Tailwind", technologyIcon: "tailwind" },
           { technology: "Express.js", technologyIcon: "express" },

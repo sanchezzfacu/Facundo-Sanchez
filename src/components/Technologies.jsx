@@ -96,11 +96,14 @@ function Technologies() {
           <h3>MongoDb</h3>
         </div>
 
-        <div className="tech-item">
+        <div className="tech-item relative">
           {/* <Image src="../app/assets/svg/nextjs.svg" width={72} height={72} alt="nextjs" /> */}
           {/* <Image src={nextjs} width={72} height={72} alt="nextjs" /> */}
           {/* <Nextjs /> */}
-          <Icon name="nextjss" height="72px" width="72px" />
+          <div className="bg-white rounded-[150%] h-[72px] w-[72px] flex items-center justify-center absolute">
+
+          <Icon name="nextjs" height="72px" width="72px" viewBox=".5 -.2 1023 1024.1" />
+          </div>
           <h3>Next.js</h3>
         </div>
       </div>
