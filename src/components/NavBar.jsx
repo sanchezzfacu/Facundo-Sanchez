@@ -20,7 +20,7 @@ function Navbar() {
 
         <a href="/#projects">Proyectos</a>
 
-        <a href="/#contact">Contáctame</a>
+        {/* <a href="/#contact">Contáctame</a> */}
       </nav>
     </header>
   );

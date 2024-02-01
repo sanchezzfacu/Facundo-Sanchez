@@ -3,7 +3,7 @@ import ProjectDisplay from "./ProjectDisplay";
 
 function Projects() {
   return (
-    <div className="projects-container">
+    <div className="projects-container" id="projects">
       <h2 className="projects-title">
         <CircleLogo />
         Proyectos
@@ -21,6 +21,7 @@ function Projects() {
           { technology: "Express.js", technologyIcon: "express" },
           { technology: "MongoDb", technologyIcon: "mongodb" },
           { technology: "Mongoose", technologyIcon: "mongoose" },
+          // { technology: "Figma", technologyIcon: "figma" },
         ]}
         website="https://mysaccesorios.com/"
       />
@@ -67,7 +68,7 @@ function Projects() {
           { technology: "CSS", technologyIcon: "css" },
           { technology: "HTML", technologyIcon: "html" },
         ]}
-        website="https://mysaccesorios.com/"
+        // website="https://mysaccesorios.com/"
         repository="https://github.com/sanchezzfacu/weather-VanillaJs"
       />
 
@@ -82,7 +83,6 @@ function Projects() {
           { technology: "HTML", technologyIcon: "html" },
         ]}
         // website=""
-        website=""
         repository="https://github.com/sanchezzfacu/calculadora-vanillaJS"
       />
 

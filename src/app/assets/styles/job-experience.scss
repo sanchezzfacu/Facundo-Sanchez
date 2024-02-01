@@ -43,6 +43,8 @@
         display: flex;
         flex-direction: column;
         h1 {
+          width: min-content;
+          white-space: nowrap;
           font-size: 30px;
           background: linear-gradient(90deg, $lightblue 0%, $blue 100%);
           -webkit-text-fill-color: transparent;

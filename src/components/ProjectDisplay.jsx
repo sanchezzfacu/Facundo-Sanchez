@@ -13,7 +13,7 @@ function ProjectDisplay({
   reversed,
 }) {
   return (
-    <div className="project-normal-pos project">
+    <div className="project">
       <div className="project-image">
         <img src={projectImage} alt="project image" />
       </div>

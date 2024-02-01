@@ -1,14 +1,90 @@
-.project-normal-pos,
-.project-reversed-pos {
+.project {
   display: flex;
   justify-content: center;
   gap: 24px;
   width: 100%;
 
+  // .project-image {
+  //   // width: 60%;
+  //   position: relative;
+  //   transition: all ease 0.3s;
+
+  .project-information {
+    // width: 40%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 15px;
+    .developed-text {
+      text-shadow: 0px 0px 3px #000;
+    }
+
+    .project-name {
+      font-size: 24px;
+      font-weight: 600;
+      border-bottom: 1px solid $lightblue;
+    }
+
+    .project-description {
+      border-radius: 5px;
+      background-color: $backgroundcolor-lighter;
+      font-size: 0.9em;
+      padding: 4px 8px;
+    }
+    .project-technologies {
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      .technology-square {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        border: 1px solid $lightblue;
+        border: 1px solid $backgroundcolor-lighter;
+        padding: 2px 6px;
+        border-radius: 4px;
+        span {
+          font-size: 15px;
+        }
+      }
+    }
+
+    .project-btns {
+      display: flex;
+      height: 40px;
+      cursor: pointer;
+      gap: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .project {
+    display: flex;
+    flex-direction: column-reverse;
+
+    img {
+      width: 100vw;
+    }
+
+    .developed-text {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .project {
+    width: 100%;
+  }
   .project-image {
-    width: 60%;
     position: relative;
     transition: all ease 0.3s;
+    width: 60%;
     &:hover {
       &::after {
         content: "";
@@ -22,56 +98,7 @@
       }
     }
   }
-}
-
-.project-information {
-  width: 40%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 15px;
-  .developed-text {
-    text-shadow: 0px 0px 3px #000;
-  }
-
-  .project-name {
-    font-size: 24px;
-    font-weight: 600;
-    border-bottom: 1px solid $lightblue;
-  }
-
-  .project-description {
-    border-radius: 5px;
-    background-color: $backgroundcolor-lighter;
-    font-size: 0.9em;
-    padding: 4px 8px;
-  }
-  .project-technologies {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    gap: 10px;
-
-    .technology-square {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      border: 1px solid $lightblue;
-      border: 1px solid $backgroundcolor-lighter;
-      padding: 2px 6px;
-      border-radius: 4px;
-      span {
-        font-size: 15px;
-      }
-    }
-  }
-
-  .project-btns {
-    display: flex;
-    height: 40px;
-    cursor: pointer;
-    gap: 12px;
+  .project-information {
+    width: 40%;
   }
 }

@@ -1,16 +1,16 @@
 function Icon({ className, name, width, height, fill, viewBox }) {
   return (
     <svg
-      width={width || "24px"}
-      height={height || "24px"}
-      viewBox={viewBox || "0 0 256 256"}
-      className={className || ""}
+      width={width ? width : "24px"}
+      height={height ? height : "24px"}
+      viewBox={viewBox ? viewBox : "0 0 256 256"}
+      className={className ? className : ""}
       xmlns="http://www.w3.org/2000/svg"
     >
       {name === "linkedin" && (
         <path
           d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 67.013ZM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009-.002-12.157 9.851-22.014 22.008-22.016 12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453"
-          fill="#0A66C2"
+          fill={fill ? fill : "#0A66C2"}
         />
       )}
 
@@ -155,8 +155,8 @@ function Icon({ className, name, width, height, fill, viewBox }) {
         >
           <defs>
             <linearGradient x1="-2.778%" y1="32%" x2="100%" y2="67.556%" id="a">
-              <stop stop-color="#2298BD" offset="0%" />
-              <stop stop-color="#0ED7B5" offset="100%" />
+              <stop stopColor="#2298BD" offset="0%" />
+              <stop stopColor="#0ED7B5" offset="100%" />
             </linearGradient>
           </defs>
           <path
@@ -419,6 +419,58 @@ function Icon({ className, name, width, height, fill, viewBox }) {
         C44.177,52.078,38.672,54.958,32.521,55.763z"
           fill="#fff"
         />
+      )}
+
+      {name === "figma" && (
+        <>
+          <g clip-path="url(#clip0_912_3)">
+            <path
+              d="M13.3333 80.0002C20.6933 80.0002 26.6667 74.0268 26.6667 66.6668V53.3335H13.3333C5.97333 53.3335 0 59.3068 0 66.6668C0 74.0268 5.97333 80.0002 13.3333 80.0002Z"
+              fill="#0ACF83"
+            />
+            <path
+              d="M0 39.9998C0 32.6398 5.97333 26.6665 13.3333 26.6665H26.6667V53.3332H13.3333C5.97333 53.3332 0 47.3598 0 39.9998Z"
+              fill="#A259FF"
+            />
+            <path
+              d="M0 13.3333C0 5.97333 5.97333 0 13.3333 0H26.6667V26.6667H13.3333C5.97333 26.6667 0 20.6933 0 13.3333Z"
+              fill="#F24E1E"
+            />
+            <path
+              d="M26.6667 0H40.0001C47.3601 0 53.3334 5.97333 53.3334 13.3333C53.3334 20.6933 47.3601 26.6667 40.0001 26.6667H26.6667V0Z"
+              fill="#FF7262"
+            />
+            <path
+              d="M53.3334 39.9998C53.3334 47.3598 47.3601 53.3332 40.0001 53.3332C32.6401 53.3332 26.6667 47.3598 26.6667 39.9998C26.6667 32.6398 32.6401 26.6665 40.0001 26.6665C47.3601 26.6665 53.3334 32.6398 53.3334 39.9998Z"
+              fill="#1ABCFE"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_912_3">
+              <rect width="53.3333" height="80" fill="white" />
+            </clipPath>
+          </defs>
+        </>
+      )}
+
+      {name === "mail" && (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5" />
+          <path d="M3 6l9 6l9 -6" />
+          <path d="M15 18h6" />
+          <path d="M18 15l3 3l-3 3" />
+        </svg>
       )}
     </svg>
   );

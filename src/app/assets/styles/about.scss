@@ -57,6 +57,7 @@
       width: 100%;
       height: auto;
       .img-about {
+        filter: drop-shadow(2px 4px 8px $lightblue);
         object-fit: contain;
       }
     }
@@ -76,7 +77,7 @@
       }
     }
   }
-
+  
   .about-image {
     display: none;
   }
@@ -84,7 +85,7 @@
 
 @media screen and (min-width: 600px) and (max-width: 1670px) {
   .about-container {
-    height: 100vh;
+    margin-top: 72px;
     gap: 46px;
     .about-content {
       width: 80vw;
@@ -98,6 +99,7 @@
       }
       .about-image {
         width: 40%;
+        margin-bottom: 56px;
       }
     }
   }
@@ -115,6 +117,9 @@
           font-size: 20px;
           letter-spacing: 0.28px;
         }
+      }
+      .about-image {
+        margin-bottom: 56px;
       }
     }
   }

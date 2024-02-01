@@ -9,7 +9,7 @@ import Reveal from "./Reveal";
 function JobExperience() {
   return (
     <Reveal>
-      <div className="job-experience-container">
+      <div className="job-experience-container" id="experience">
         <h1 className="job-experience-title">
           <CircleLogo />
           Experiencia Laboral

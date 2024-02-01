@@ -1,4 +1,5 @@
 import DecorationCircle from "./DecorationCircle";
+import Icon from "./Icon";
 
 import Reveal from "./Reveal";
 
@@ -24,18 +25,27 @@ function Presentation() {
                 </p> */}
 
             <p>
-              Tengo mas de 1 año de experiencia trabajando y actualmente
-              me encuentro aprendiendo nuevas tecnologías a la vez que hago
+              Tengo mas de 1 año de experiencia trabajando y actualmente me
+              encuentro aprendiendo nuevas tecnologías a la vez que hago
               trabajos freelance.
             </p>
           </h3>
-          <a
-            href="https://drive.google.com/file/d/1E8Ru30CwXO_QkSNqR72INPdqBN2OyJA_/view"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button>VER CURRICULUM</button>
-          </a>
+
+
+          <div className="contact-buttons">
+            <a
+              href="mailto:sanchezfacundocristian@hotmail.com"
+              className="flex items-center justify-center px-2 "
+            >
+              <Icon name="mail" fill="#fff" viewBox="0 0 24 24" />
+              Contactame
+            </a>
+
+            <a href="https://www.linkedin.com/in/sanchezzfacu/">
+              <Icon name="linkedin" fill="#fff" />
+              LinkedIn
+            </a>
+          </div>
           <DecorationCircle />
         </div>
       </div>

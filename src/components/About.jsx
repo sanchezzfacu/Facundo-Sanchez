@@ -7,7 +7,7 @@ import Image from "next/image";
 function About() {
   return (
     <Reveal>
-      <section className="about-container">
+      <section className="about-container" id="about">
         <h1 className="about-title">
           <CircleLogo />
           Acerca de mi

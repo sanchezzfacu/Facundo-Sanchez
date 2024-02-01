@@ -1,12 +1,9 @@
-import Image from "next/image";
 import CircleLogo from "./CircleLogo";
-import nextjs from "../app/assets/svg/nextjs.svg";
 import Icon from "./Icon";
-import Nextjs from "./Nextjs";
 
 function Technologies() {
   return (
-    <div className="technologies-container">
+    <div className="technologies-container" id="technologies">
       <h2 className="technologies-title">
         <CircleLogo />
         Tecnologías
@@ -99,8 +96,7 @@ function Technologies() {
         <div className="tech-item relative">
           {/* <Image src="../app/assets/svg/nextjs.svg" width={72} height={72} alt="nextjs" /> */}
           {/* <Image src={nextjs} width={72} height={72} alt="nextjs" /> */}
-          {/* <Nextjs /> */}
-          <div className="bg-white rounded-[150%] h-[72px] w-[72px] flex items-center justify-center absolute">
+          <div className="bg-white rounded-[150%] h-[72px] w-[72px] flex items-center justify-center">
 
           <Icon name="nextjs" height="72px" width="72px" viewBox=".5 -.2 1023 1024.1" />
           </div>
