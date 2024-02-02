@@ -10,9 +10,26 @@ function Projects() {
       </h2>
 
       <ProjectDisplay
+        projectName="Ontiime"
+        projectDescription="Ontiime es una solución SaaS B2B para el seguimiento de cuentas de clientes y recuperación de deudas. Su objetivo es minimizar los plazos de pago mediante estrategias innovadoras y, de esta manera, reducir las deudas de las empresas."
+        projectImage="/dashboard.jpeg"
+        projectTechnologies={[
+          { technology: "React", technologyIcon: "react" },
+          { technology: "TypeScript", technologyIcon: "typescript" },
+          { technology: "Redux", technologyIcon: "redux" },
+          { technology: "React Query", technologyIcon: "react-query" },
+          { technology: "SASS", technologyIcon: "sass" },
+          { technology: "Express.js", technologyIcon: "express" },
+          { technology: "Mongoose", technologyIcon: "mongoose" },
+          { technology: "MongoDb", technologyIcon: "mongodb" },
+          // { technology: "Figma", technologyIcon: "figma" },
+        ]}
+        website="https://mysaccesorios.com/"
+      />
+
+      <ProjectDisplay
         projectName="MyS Accesorios"
-        projectDescription="Desarrollo de un ecommerce para un emprendimiento. Cuenta con todas
-        las funcionalidades de una tienda online típica."
+        projectDescription="Ecommerce de accesorios de belleza para emprendimiento que brinda una solución a la digitalización de los datos del negocio y a un mayor alcance de audiencia. (panel de administrador, carrito de compra, cupones de descuentos, órdenes de compra, etc.)"
         projectImage="/mysaccesorios.png"
         projectTechnologies={[
           { technology: "Next.js", technologyIcon: "nextjs" },
@@ -85,142 +102,6 @@ function Projects() {
         // website=""
         repository="https://github.com/sanchezzfacu/calculadora-vanillaJS"
       />
-
-      {/* <div className="project-reversed-pos project">
-        <div className="project-image">
-          <img src={homeWeather} alt="" />
-        </div>
-        <div className="project-information">
-          <h3 className="developed-text">Proyecto desarrollado</h3>
-
-          <h1>Aplicación del clima</h1>
-
-          <h3 className="project-description">
-            Aplicacion que consume una api del clima, donde se puede consultar
-            el clima de cualquier ciudad en tiempo real.
-          </h3>
-
-          <div className="tecnologies">
-            <h5>JavaScript</h5>
-            <h5>SASS</h5>
-            <h5>HTML</h5>
-            <h5>API</h5>
-          </div>
-          <div className="repository-btn">
-            <a
-              href="https://github.com/sanchezzfacu/weather-VanillaJs"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={github} alt="" />
-            </a>
-          </div>
-        </div>
-      </div> */}
-
-      {/* <div className="project-reversed-pos project">
-        <div className="project-image">
-          <img src={homeproyectofinal} alt="" />
-        </div>
-        <div className="project-information">
-          <h3 className="developed-text">Proyecto desarrollado</h3>
-
-          <h1>Proyecto Final Carrera | Ecommerce</h1>
-
-          <h3 className="project-description">
-            Desarrollo de un ecommerce con un grupo de 6 personas usando
-            metodología ágil (scrum).
-          </h3>
-
-          <div className="tecnologies">
-            <h5>React</h5>
-            <h5>Redux</h5>
-            <h5>CSS</h5>
-            <h5>Node</h5>
-            <h5>Sequelize</h5>
-            <h5>PostgreSQL</h5>
-            <h5>Git</h5>
-            <h5>SCRUM</h5>
-          </div>
-          <div className="repository-btn">
-            <a
-              href="https://github.com/guidoabelleira/E-Commerce-PF10"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={github} alt="" />
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div className="project-normal-pos project">
-        <div className="project-image">
-          <img src={homeGamila} alt="" />
-        </div>
-        <div className="project-information">
-          <h3 className="developed-text">Proyecto desarrollado</h3>
-
-          <h1>Freelance | Empresa de Traslados</h1>
-
-          <h3 className="project-description">
-            Desarrollo freelance de una landing page para empresa dedicada al
-            traslado de pasajeros.
-          </h3>
-
-          <div className="tecnologies">
-            <h5>JavaScript</h5>
-            <h5>SASS</h5>
-            <h5>HTML</h5>
-          </div>
-          <div className="repository-btn">
-            <a
-              href="https://github.com/sanchezzfacu/gamila-traslados"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={github} alt="" />
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div className="project-normal-pos project">
-        <div className="project-image">
-          <img src={homeFood} alt="" />
-        </div>
-        <div className="project-information">
-          <h3 className="developed-text">Proyecto desarrollado</h3>
-
-          <h1>Sitio Web de Recetas</h1>
-
-          <h3 className="project-description">
-            Desarrollo de una SPA que consume la API de spoonacular, a la cual
-            se le agregaron funcionalidades extras.
-          </h3>
-
-          <div className="tecnologies">
-            <h5>React</h5>
-            <h5>Redux</h5>
-            <h5>CSS</h5>
-            <h5>Node</h5>
-            <h5>Sequelize</h5>
-            <h5>PostgreSQL</h5>
-            <h5>API</h5>
-          </div>
-          <div className="repository-btn">
-            <a
-              href="https://github.com/sanchezzfacu/Proyecto-individual-Foods"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={github} alt="" />
-            </a>
-          </div>
-        </div>
-      </div>
-
-       */}
     </div>
   );
 }

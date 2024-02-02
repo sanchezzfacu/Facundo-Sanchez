@@ -31,7 +31,7 @@ function ProjectDisplay({
               <div
                 className={
                   technology.technologyIcon === "nextjs" &&
-                  "bg-white rounded-full h-[18px] w-[18px] flex items-center justify-center"
+                  "bg-white rounded-full h-[17px] w-[18px] flex items-center justify-center"
                 }
               >
                 <Icon
@@ -53,18 +53,14 @@ function ProjectDisplay({
         <div className="project-btns">
           {repository?.length > 0 && (
             <a href={repository} target="_blank" rel="noreferrer">
-              <Icon name="github" height="36px" width="36px" fill="#fff" />
+              <Icon name="github" fill="#fff" />
+              Code
             </a>
           )}
           {website?.length > 0 && (
             <a href={website} target="_blank" rel="noreferrer">
-              <Icon
-                name="web"
-                height="36px"
-                width="36px"
-                fill="#fff"
-                viewBox="0 0 58 58"
-              />
+              <Icon name="web" fill="#fff" viewBox="0 0 58 58" />
+              Preview
             </a>
           )}
         </div>

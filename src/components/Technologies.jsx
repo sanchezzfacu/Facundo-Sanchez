@@ -24,6 +24,17 @@ function Technologies() {
           <Icon name="typescript" height="72px" width="72px" />
           <h3>TypeScript</h3>
         </div>
+        <div className="tech-item relative">
+          <div className="bg-white border-2 border-black rounded-[150%] h-[72px] w-[72px] flex items-center justify-center">
+            <Icon
+              name="nextjs"
+              height="72px"
+              width="72px"
+              viewBox=".5 -.2 1023 1024.1"
+            />
+          </div>
+          <h3>Next.js</h3>
+        </div>
         <div className="tech-item">
           <Icon name="react" height="72px" width="72px" />
           <h3>React</h3>
@@ -70,7 +81,7 @@ function Technologies() {
 
         <div className="tech-item">
           <Icon name="node" height="72px" width="72px" />
-          <h3>Node</h3>
+          <h3>Node.js</h3>
         </div>
 
         <div className="tech-item">
@@ -91,16 +102,6 @@ function Technologies() {
         <div className="tech-item">
           <Icon name="mongodb" height="72px" width="72px" />
           <h3>MongoDb</h3>
-        </div>
-
-        <div className="tech-item relative">
-          {/* <Image src="../app/assets/svg/nextjs.svg" width={72} height={72} alt="nextjs" /> */}
-          {/* <Image src={nextjs} width={72} height={72} alt="nextjs" /> */}
-          <div className="bg-white rounded-[150%] h-[72px] w-[72px] flex items-center justify-center">
-
-          <Icon name="nextjs" height="72px" width="72px" viewBox=".5 -.2 1023 1024.1" />
-          </div>
-          <h3>Next.js</h3>
         </div>
       </div>
     </div>
