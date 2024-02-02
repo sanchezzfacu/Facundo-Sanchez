@@ -42,6 +42,7 @@
         position: relative;
         display: flex;
         flex-direction: column;
+        gap: 6px;
         h1 {
           width: min-content;
           white-space: nowrap;
@@ -54,7 +55,31 @@
         ul li {
           line-height: 24px;
           list-style: none;
+          strong {
+            color: $blue;
+          }
         }
+
+        a {
+          display: flex;
+          align-items: center;
+          font-size: 1.1em;
+          font-weight: 600;
+          margin-left: 12px;
+          width: min-content;
+          white-space: nowrap;
+          text-decoration: none;
+          background-image: linear-gradient($lightblue, $lightblue);
+          background-position: 0% 100%;
+          background-repeat: no-repeat;
+          background-size: 0% 2px;
+          transition: background-size 0.3s;
+          &:hover,
+          &:focus {
+            background-size: 94% 2px;
+          }
+        }
+        
         &::before {
           content: "";
           position: absolute;

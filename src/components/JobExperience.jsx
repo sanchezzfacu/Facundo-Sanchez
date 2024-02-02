@@ -4,6 +4,7 @@ import JobExperienceSvg from "../app/assets/svg/Programming-rafiki.svg";
 import CircleLogo from "./CircleLogo";
 import JobSvg from "./JobSvg";
 import Reveal from "./Reveal";
+import Icon from "./Icon";
 // import { ReactSVG } from "react-svg";
 
 function JobExperience() {
@@ -19,32 +20,81 @@ function JobExperience() {
           <div className="job-experience-info">
             <div className="job">
               <h3>Oct. 2022 - Jul. 2023</h3>
-              <h1>Frontend Developer - Ontiime.</h1>
+              <h1>FrontEnd Developer - Ontiime.</h1>
               <ul>
                 <li>
-                  - Desarrollo desde cero de la estructura del proyecto para
-                  tener una base escalable.
+                  - Planificación y desarrollo de la estructura del proyecto
+                  para tener una base escalable.
                 </li>
                 <li>
-                  - Implementación de los wireframes del equipo de diseño.
+                  - Implementación del <strong>system design</strong> del equipo
+                  de diseño.
                 </li>
                 <li>
-                  - Creación integral de la versión mobile del producto
-                  siguiendo criterios autónomos sin documentación.
+                  - Creación integral de la <strong>versión mobile</strong> del
+                  producto siguiendo criterios propios.
+                </li>
+                <li>- Desarrollo integral de funcionalidades del producto.</li>
+                <li>
+                  - Creación de dashboard para la visualizacion de datos
+                  financieros de las empresas.
                 </li>
                 <li>
-                  - Refactorización de estilos y lógica de los componentes para
-                  mejorar la calidad del código.
-                </li>
-                <li>
-                  - Contribuciones en la generación de ideas para cubrir
-                  detalles del producto que requerían atención.
+                  - Aporte de ideas a partes del producto que no estaban
+                  definidas.
                 </li>
               </ul>
+              <a href="#ontiime">
+                Saber más{" "}
+                <Icon
+                  name="chevron-right"
+                  height="18px"
+                  width="18px"
+                  viewBox="0 0 24 24"
+                  fill="#07fad3"
+                />
+              </a>
+            </div>
+
+            <div className="job">
+              <h3>Ago. 2023 - Ene. 2024</h3>
+
+              <h1>FullStack Developer - MyS Accesorios.</h1>
+              <ul>
+                <li>
+                  - Desarrollo de un e-commerce para generar ventas online.
+                </li>
+                <li>
+                  - Generación de un panel de control para publicar/eliminar
+                  productos y categorías, crear cupones de descuentos entre
+                  otros.
+                </li>
+                <li>- Creación e implementación del diseño del ecommerce.</li>
+                <li>
+                  - Planificación del proyecto para mayor escalabilidad en el
+                  tiempo.
+                </li>
+                <li>
+                  - Planificación e implementación de una{" "}
+                  <strong>campaña de facebook e instagram ads</strong> para
+                  obtener mayor cantidad de ventas y tener un mayor alcance.
+                </li>
+              </ul>
+              <a href="#mysaccesorios">
+                Saber más{" "}
+                <Icon
+                  name="chevron-right"
+                  height="18px"
+                  width="18px"
+                  viewBox="0 0 24 24"
+                  fill="#07fad3"
+                />
+              </a>
             </div>
 
             <div className="job">
               <h3>Jul. 2022 - Sept. 2022</h3>
+
               <h1>Frontend Developer - Gamila Traslados.</h1>
               <ul>
                 <li>- Definí la estructura central del proyecto.</li>
@@ -61,27 +111,16 @@ function JobExperience() {
                   - Creación e implementación del diseño de la landing page.
                 </li>
               </ul>
-            </div>
-
-            <div className="job">
-              <h3>Feb. 2022 - Abr. 2022</h3>
-              <h1>Full Stack Developer - MyS Accesorios.</h1>
-              <ul>
-                <li>
-                  - Desarrollo de un e-commerce para generar ventas online.
-                </li>
-                <li>
-                  - Generación de un panel de control para publicar/eliminar
-                  productos y crear/eliminar categorías.
-                </li>
-                <li>
-                  - Creación e implementación del diseño de la landing page.
-                </li>
-                <li>
-                  - Refactorización de estilos y lógica de los componentes para
-                  mejorar la calidad del código.
-                </li>
-              </ul>
+              <a href="#gamila">
+                Saber más{" "}
+                <Icon
+                  name="chevron-right"
+                  height="18px"
+                  width="18px"
+                  viewBox="0 0 24 24"
+                  fill="#07fad3"
+                />
+              </a>
             </div>
           </div>
 

@@ -10,6 +10,7 @@ function Projects() {
       </h2>
 
       <ProjectDisplay
+        id="ontiime"
         projectName="Ontiime"
         projectDescription="Ontiime es una solución SaaS B2B para el seguimiento de cuentas de clientes y recuperación de deudas. Su objetivo es minimizar los plazos de pago mediante estrategias innovadoras y, de esta manera, reducir las deudas de las empresas."
         projectImage="/dashboard.jpeg"
@@ -24,10 +25,11 @@ function Projects() {
           { technology: "MongoDb", technologyIcon: "mongodb" },
           // { technology: "Figma", technologyIcon: "figma" },
         ]}
-        website="https://mysaccesorios.com/"
+        website="https://ontiime.io/"
       />
 
       <ProjectDisplay
+        id="mysaccesorios"
         projectName="MyS Accesorios"
         projectDescription="Ecommerce de accesorios de belleza para emprendimiento que brinda una solución a la digitalización de los datos del negocio y a un mayor alcance de audiencia. (panel de administrador, carrito de compra, cupones de descuentos, órdenes de compra, etc.)"
         projectImage="/mysaccesorios.png"
@@ -44,9 +46,9 @@ function Projects() {
       />
 
       <ProjectDisplay
+        id="gamila"
         projectName="Gamila Traslados"
-        projectDescription="Desarrollo de una landing page (pagina de servicios) para empresa dedicada al
-        traslado de pasajeros."
+        projectDescription="Página de servicios de empresa dedicada al traslado de pasajeros que tiene como finalidad la digitalización del negocio para generar mas ventas. "
         projectImage="/trasladosgamila.png"
         projectTechnologies={[
           { technology: "Next.js", technologyIcon: "nextjs" },
@@ -61,8 +63,7 @@ function Projects() {
 
       <ProjectDisplay
         projectName="Hola Shop"
-        projectDescription="Desarrollo de una landing page (pagina de servicios) para empresa dedicada al
-        traslado de pasajeros."
+        projectDescription="Ecommerce de artículos de mate que cuenta con todas las funcionalidades de un negocio en línea."
         projectImage="/hshop.png"
         projectTechnologies={[
           { technology: "React", technologyIcon: "react" },
@@ -75,7 +76,7 @@ function Projects() {
         repository="https://github.com/guidoabelleira/E-Commerce-PF10"
       />
 
-      <ProjectDisplay
+      {/* <ProjectDisplay
         projectName="Weather App"
         projectDescription="Aplicacion que consume una api del clima, donde se puede consultar
         el clima de cualquier ciudad en tiempo real."
@@ -101,7 +102,7 @@ function Projects() {
         ]}
         // website=""
         repository="https://github.com/sanchezzfacu/calculadora-vanillaJS"
-      />
+      /> */}
     </div>
   );
 }

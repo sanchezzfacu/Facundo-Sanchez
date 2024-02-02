@@ -9,11 +9,12 @@ function ProjectDisplay({
   projectImage,
   repository,
   website,
+  id,
   projectUrl,
   reversed,
 }) {
   return (
-    <div className="project">
+    <div className="project" id={id && id}>
       <div className="project-image">
         <img src={projectImage} alt="project image" />
       </div>

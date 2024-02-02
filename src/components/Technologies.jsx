@@ -11,7 +11,6 @@ function Technologies() {
 
       <div className="items-tech-container">
         <div className="tech-item">
-          {/* <img src={js} alt=""/> */}
           <Icon
             name="javascript"
             viewBox="0 0 1052 1052"
@@ -25,7 +24,7 @@ function Technologies() {
           <h3>TypeScript</h3>
         </div>
         <div className="tech-item relative">
-          <div className="bg-white border-2 border-black rounded-[150%] h-[72px] w-[72px] flex items-center justify-center">
+          <div className="bg-white border-2 border-black rounded-full h-[72px] w-[72px] flex items-center justify-center">
             <Icon
               name="nextjs"
               height="72px"
@@ -85,13 +84,13 @@ function Technologies() {
         </div>
 
         <div className="tech-item">
-          <Icon name="sequelize" height="72px" width="72px" />
-          <h3>Sequelize</h3>
+          <Icon name="express" height="72px" width="72px" />
+          <h3>Express.js</h3>
         </div>
 
         <div className="tech-item">
-          <Icon name="express" height="72px" width="72px" />
-          <h3>Express.js</h3>
+          <Icon name="sequelize" height="72px" width="72px" />
+          <h3>Sequelize</h3>
         </div>
 
         <div className="tech-item">
