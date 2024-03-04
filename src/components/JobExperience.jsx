@@ -66,7 +66,7 @@ function JobExperience() {
                 </li>
                 <li>
                   - Generación de un panel de control para publicar/eliminar
-                  productos y categorías, crear cupones de descuentos entre
+                  productos y categorías, crear cupones de descuentos, ver órdenes de compra entre
                   otros.
                 </li>
                 <li>- Creación e implementación del diseño del ecommerce.</li>
@@ -95,7 +95,7 @@ function JobExperience() {
             <div className="job">
               <h3>Jul. 2022 - Sept. 2022</h3>
 
-              <h1>Frontend Developer - Gamila Traslados.</h1>
+              <h1>FrontEnd Developer - Gamila Traslados.</h1>
               <ul>
                 <li>- Definí la estructura central del proyecto.</li>
                 <li>
