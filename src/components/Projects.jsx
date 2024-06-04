@@ -58,7 +58,7 @@ function Projects() {
           { technology: "MongoDb", technologyIcon: "mongodb" },
           { technology: "Mongoose", technologyIcon: "mongoose" },
         ]}
-        website="https://trasladosgamila.com/"
+        // website="https://trasladosgamila.com/"
       />
 
       <ProjectDisplay
